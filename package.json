@@ -1,0 +1,25 @@
+{
+  "name": "tutable-transfer-script",
+  "version": "1.0.0",
+  "description": "Script to transfer the money from stripe to end customers",
+  "main": "loader.js",
+  "scripts": {
+    "start": "node loader.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "gaurav sharma",
+  "license": "ISC",
+  "dependencies": {
+    "cron": "^1.3.0",
+    "es6-promise": "^4.2.4",
+    "mongoose": "^5.0.15",
+    "stripe": "^5.8.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0"
+  }
+}
