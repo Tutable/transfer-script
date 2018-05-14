@@ -46,7 +46,7 @@ const processData = ({ page = 1, limit = 30 }) => new Promise(async (resolve, re
  * @todo this is every minute script right now.
  * Handle this for every weekend
  */
-const cron = new CronJob('0 * * * * *', async () => {
+const cron = new CronJob('0 0 * * * 0', async () => {
 	await processData({});
 	console.log('paid off all due amounts');
 }, null, true, 'America/Los_Angeles');
